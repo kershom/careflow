@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Staff Login | CareFlow</title>
+    <link rel="stylesheet" href="staff_style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h2>CareFlow Staff Portal</h2>
+        <p class="sub">Authorized hospital personnel only</p>
+
+        <form action="../auth/login.php" method="POST">
+
+            <label>User ID / Email</label>
+            <input type="text" name="userid" required>
+
+            <label>Password</label>
+            <input type="password" name="password" required>
+
+            <label>Role</label>
+            <select name="role" required>
+                <option value="">Select Role</option>
+                <option value="doctor">Doctor</option>
+                <option value="pharmacist">Pharmacist</option>
+                <option value="reception">Receptionist</option>
+            </select>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p class="note">Internal hospital access • CareFlow System</p>
+
+    </div>
+
+</body>
+
+</html>
