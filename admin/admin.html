@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CareFlow Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css"/>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>CareFlow</h2>
+    <p class="role">Admin Panel</p>
+
+    <ul>
+      <li class="active"><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="users.html">User Management</a></li>
+      <li><a href="doctors.html">Doctors</a></li>
+      <li><a href="patients.html">Patients</a></li>
+      <li class="logout"><a href="../index.html">Logout</a></li>
+    </ul>
+    
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <header class="topbar">
+      <h1>Admin Dashboard</h1>
+      <span>Admin</span>
+    </header>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="box">
+        <h3>Total Users</h3>
+        <p>356</p>
+      </div>
+      <div class="box">
+        <h3>Doctors</h3>
+        <p>28</p>
+      </div>
+      <div class="box">
+        <h3>Patients</h3>
+        <p>328</p>
+      </div>
+      <div class="box">
+        <h3>Appointments Today</h3>
+        <p>41</p>
+      </div>
+    </section>
+
+    <!-- Tables -->
+    <section class="table-section">
+      <h2>Recent Appointments</h2>
+      <table>
+        <tr>
+          <th>Patient</th>
+          <th>Doctor</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Asha</td>
+          <td>Dr. Kumar</td>
+          <td>06 Feb</td>
+          <td class="pending">Pending</td>
+          <td><button>View</button></td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Dr. Smith</td>
+          <td>06 Feb</td>
+          <td class="approved">Approved</td>
+          <td><button>View</button></td>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
